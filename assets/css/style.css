@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+/* varibles */
+:root {
+    /* colors */
+    --primaryColor: #23377F;
+    --secondaryColor: #E31E24;
+    --offWhite: #EEEDE8;
+
+    /* distance */
+    --generalDistance: 25px;
+    --sectionDistance: 50px;
+
+    /* typography weight */
+    --regularWeight: 400;
+    --boldWeight: 700;
+    --xBoldWeight: 900;
+
+}
+
+/* typography */
+
+
+/* top navigation */
+nav {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    text-align: center;
+    align-items: center;
+    background-color: var(--primaryColor);
+    min-height: 75px;
+}
+
+.current:not(:first-child) {
+    background-color: var(--secondaryColor);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}

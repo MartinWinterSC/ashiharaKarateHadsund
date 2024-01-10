@@ -1,0 +1,74 @@
+/* typography */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+}
+h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+h3 {
+    font-weight: bold;
+    font-size: 1rem;
+}
+h4 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+}
+p{
+    font-size: 0.9rem;
+    line-height: 150%;
+    margin: 15px;
+}
+
+/* Defaults */
+body {
+    margin: 0;
+    font-family: 'lato', sans-serif;
+}
+
+/* varibles */
+:root {
+    /* colors */
+    --primaryColor: #23377F;
+    --secondaryColor: #E31E24;
+    --offWhite: #EEEDE8;
+    --primaryTransparent: rgba(35, 55, 127, 0.54);
+
+    /* spacing */
+    --generalSpacing: 25px;
+    --sectionSpacing: 50px;
+}
+
+/* top navigation */
+nav {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    text-align: center;
+    align-items: center;
+    background-color: var(--primaryColor);
+    min-height: 75px;
+}
+
+.current:not(:first-child) {
+    background-color: var(--secondaryColor);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Ashihara */ 
+
+.citat {
+    background-color: beige;
+    padding: 1px;
+}
+.citat p {
+    font-style: italic;
+    text-align: center;
+}

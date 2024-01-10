@@ -58,17 +58,30 @@ nav {
 }
 
 nav a {
+    display: ;
     color: white;
     text-decoration: none;
 }
 
 /* Ashihara */ 
 
+.hvaderashi {
+    margin: 15px ;
+}
+.hvaderashi img{
+    width: 100%;
+    height: auto ;
+}
+
+.hvaderashi p {
+    margin: 0;
+}
 .citat {
     background-color: beige;
-    padding: 1px;
+    padding: 5px;
 }
-.citat p {
+.citatK {
     font-style: italic;
     text-align: center;
 }
+

@@ -85,3 +85,21 @@ nav a {
     text-align: center;
 }
 
+/* Værdier */ 
+.maalsatning{
+    background-color: #23377F ;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.maalsatningikon{
+    display: flex;
+ margin: 15px;
+}
+
+.maalsatning a{
+    margin: 30px;
+    color: white;
+    text-align: center;
+}

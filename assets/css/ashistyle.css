@@ -58,7 +58,7 @@ nav {
 }
 
 nav a {
-    display: ;
+    display: block ;
     color: white;
     text-decoration: none;
 }
@@ -67,7 +67,10 @@ nav a {
 
 .hvaderashi {
     margin: 15px ;
+
 }
+
+
 .kanchoimg img{
     width: 100%;
     height: auto ;
@@ -84,6 +87,7 @@ nav a {
     font-style: italic;
     text-align: center;
 }
+
 
 /* Værdier ikoner */ 
 .maalsatning{
@@ -109,11 +113,11 @@ nav a {
 main{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
     width: 1200px;
-    grid-gap: 3rem;
+    grid-gap: 2rem;
   padding: 70px;
   margin: auto; 
-  align-items: end;
  
 }
 
@@ -124,21 +128,34 @@ main{
 
 .kanchoimg {
 grid-column: 2 / span 1; 
-  grid-row: 1 / span 1;
+  grid-row: 1 / span 2;
 }
 
 
 .kanchoimg img { 
-    max-width: 100%;
-    min-height: 50%;
+    width: 100%;
+    height: 31rem;
     object-fit: cover;
 }
 
+.hvaderashi2 {
+    grid-column: 1 / span 1; 
+      grid-row: 3 / span 2;
+    }
+
 
 .maalsatning{
-   grid-columns: 2 / 1;
-   grid-rows: 3 / span 1;
+   grid-columns: 1 / span 1;
+   grid-rows: 2 / span 1;
 }
+.citat{
+    height: 5rem;
+    grid-column: 1 / span 1; 
+      grid-row: 2 / span 2;
+}
+
+
+
 }
 
 

@@ -1,19 +1,19 @@
 /* typography */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap');
-h1 {
+h1{
     font-weight: bold;
     font-size: 2rem;
     color: white;
 }
-h2 {
+h2{
     font-weight: bold;
     font-size: 1.5rem;
 }
-h3 {
+h3{
     font-weight: bold;
     font-size: 1rem;
 }
-h4 {
+h4{
     font-weight: bold;
     font-size: 1.5rem;
     color: white;
@@ -24,13 +24,14 @@ p{
 }
 
 /* Defaults */
-body {
+body{
     margin: 0;
     font-family: 'lato', sans-serif;
+    transition: 300ms;
 }
 
 /* varibles */
-:root {
+:root{
     /* colors */
     --primaryColor: #23377F;
     --secondaryColor: #E31E24;
@@ -42,7 +43,7 @@ body {
 }
 
 /* top navigation */
-nav {
+nav{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     text-align: center;
@@ -51,10 +52,10 @@ nav {
     min-height: 75px;
     gap: 10px;
 }
-.current:not(:first-child) {
+.current:not(:first-child){
     background-color: var(--secondaryColor);
 }
-nav a {
+nav a{
     color: white;
     text-decoration: none;
 }
@@ -67,9 +68,13 @@ nav img:first-child{
     margin-right: 0;
 }
 
+
 /* main */
 main{
-    margin: 25px;
+    margin: var(--generalSpacing);
+}
+section{
+    margin-top: var(--sectionSpacing);
 }
 
 /* button styling */
@@ -91,36 +96,37 @@ button{
     object-fit: cover;
     overflow: hidden;
 }
-.overlayContainerMain {
+.overlayContainerMain{
     position: relative;
 }
-.overlayContainerMain::before {
+.overlayContainerMain::before{
     content: "";
     display: block;
     position: absolute;
-    width: 40%;
-    height: 5vh;
+    width: 55%;
+    height: 5rem;
     background-color: rgba(35, 55, 127, 0.2);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.overlayContainerMain h1 {
+.overlayContainerMain h1{
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: 0;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* focus entry points */
-.focusEPLine {
+.focusEPLine{
     display: flex;
     flex-direction: column;
     gap: var(--generalSpacing);
     justify-content: space-between;
 }
-.focusEP {
+.focusEP{
     position: relative;
 }
 .focusEP img{
@@ -128,10 +134,10 @@ button{
     height: 200px;
     width: 30vw;
 }
-.overlayContainer {
+.overlayContainer{
     position: relative;
 }
-.overlayContainer::before {
+.overlayContainer::before{
     content: "";
     display: block;
     position: absolute;
@@ -139,14 +145,28 @@ button{
     height: 100%;
     background-color: rgba(35, 55, 127, 0.54);
 }
-.overlayContainer > img {
+.overlayContainer > img{
     display: block;
     width: 100%;
 }
-.overlayContainer > h4 {
+.overlayContainer > h4{
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: 0;
     transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* icons */
+.icons{
+    height: 3rem;
+    width: 3rem;
+}
+
+/* media queries */
+@media screen and (min-width: 900px){
+    .focusEPLine{
+        flex-direction: row;
+    }
 }

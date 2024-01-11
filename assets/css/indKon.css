@@ -1,0 +1,38 @@
+/* varibles */
+:root {
+    /* colors */
+    --primaryColor: #23377F;
+    --secondaryColor: #E31E24;
+    --offWhite: #EEEDE8;
+    --price: #408442;
+
+    /* spacing */
+    --generalSpacing: 25px;
+    --sectionSpacing: 50px;
+}
+.register{
+    display: flex;
+    gap: var(--generalSpacing);
+}
+.register article{
+    text-align: center;
+}
+.childReg{
+    background-color: var(--offWhite);
+}
+.adultReg{
+    background-color: black;
+    color: white;
+}
+.price{
+    color: var(--price);
+}
+.trial{
+    font-weight: ;
+}
+.registerButton{
+    position: relative;
+    border-radius: 0;
+    background-color: var(--price);
+    width: 100%;
+}

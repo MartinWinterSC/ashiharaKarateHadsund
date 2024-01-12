@@ -8,7 +8,6 @@
 
 .radgivningintro{
     background-color: beige;
-    
 }
 
 .radgivningintro h2{
@@ -32,3 +31,124 @@ margin-bottom: 10px;
 margin-left: 25px;
 margin-top: 25px;
 }
+
+
+/* Generelle Faq */ 
+
+.faq h3{
+margin: 0;
+padding: 25px 25px 0 25px;
+text-align: center;
+}
+
+.faq{
+    background-color: beige;
+}
+
+#accordion{
+margin:25px;
+color: white;
+padding: 0;
+}
+
+#accordion h2{
+    margin-bottom: 10px;
+}
+#accordion li{
+    list-style: none;
+    width: auto;
+    background-color: darkblue;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#accordion li label{
+    cursor: pointer;
+}
+
+.toggle-icon:before{
+    color: white;
+    content: "+";
+    display: block;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 25px;
+    height: 10px;
+    margin-left: auto;
+}
+
+#accordion li label span{
+    transform: rotate(90deg);
+    font-size: 20px;
+}
+#accordion input[type="checkbox"] {
+    display: none;
+}
+
+
+
+#accordion input[type="checkbox"]:checked + label .toggle-icon:before {
+    content: '-';
+}
+/*  1 */ 
+#accordion .content{
+    overflow: hidden;
+    max-height: 0;
+}
+#first:checked + label + .content {
+    max-height: 400px;
+}
+
+/* 2 */ 
+#accordion .content2{
+    overflow: hidden;
+    max-height: 0;
+}
+#second:checked + label + .content2 {
+    max-height: 400px;
+}
+
+/* 3 */ 
+#accordion .content3{
+    overflow: hidden;
+    max-height: 0;
+}
+#third:checked + label + .content3 {
+    max-height: 400px;
+}
+
+/* 4 */ 
+#accordion .content4{
+    overflow: hidden;
+    max-height: 0;
+}
+#fjerde:checked + label + .content4 {
+    max-height: 400px;
+}
+
+/* 5 */ 
+#accordion .content5{
+    overflow: hidden;
+    max-height: 0;
+}
+#femte:checked + label + .content5 {
+    max-height: 400px;
+}
+
+/* 6 */ 
+#accordion .content6{
+    overflow: hidden;
+    max-height: 0;
+}
+#sjette:checked + label + .content6 {
+    max-height: 400px;
+}
+
+
+/* Media query */ 
+@media screen and (min-width:600px){
+       .faq{
+        display: grid;
+       }
+        
+}}

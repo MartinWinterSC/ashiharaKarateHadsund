@@ -147,8 +147,31 @@ padding: 0;
 
 /* Media query */ 
 @media screen and (min-width:600px){
-       .faq{
+    .radgivning {
         display: grid;
-       }
-        
-}}
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 0 auto;
+        width: 100%;
+      }
+    
+      .rad1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+     
+      }
+
+    .rad2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+      
+    .rad2 {
+        grid-row: 2;
+      }
+    
+    }
+
+    

@@ -43,6 +43,7 @@ text-align: center;
 
 .faq{
     background-color: beige;
+    margin: 0;
 }
 
 #accordion{
@@ -147,31 +148,53 @@ padding: 0;
 
 /* Media query */ 
 @media screen and (min-width:600px){
+    .radgivningintro{
+        text-align: center;
+    }
     .radgivning {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 1rem;
         margin: 0 auto;
         width: 100%;
+        
       }
     
-      .rad1 {
+    .rad1, .rad2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+     }
+
+    .rad1 img {
+        grid-column: 2 / 2;
+        height: 400px;
+        object-position: top;
+     }
+
+     .rad2 img{
+        height: 400px;
+        object-position:center;
+     }
      
-      }
-
-    .rad2 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-    }
-      
-    .rad2 {
-        grid-row: 2;
-      }
     
+     .rad1 div{
+        grid-column: 1 / 2;
+        grid-row: 1 / 1;
+     }
+
+     
+
+     #accordion {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        flex-wrap: wrap;
+       column-gap: 2rem;
+       margin: 25px;
+
+    }
+    #accordion li{
+        width: 450px;
+        
     }
 
-    
+}   

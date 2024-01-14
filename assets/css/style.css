@@ -51,9 +51,11 @@ nav{
     background-color: var(--primaryColor);
     min-height: 75px;
     gap: 10px;
+    height: 10vh;
 }
 .current:not(:first-child){
-    background-color: var(--secondaryColor);
+    font-weight: bold;
+    text-align: center;
 }
 nav a{
     color: white;
@@ -63,17 +65,23 @@ nav img{
     max-width: 10vw;
     max-height: 10vh;
 }
-nav img:first-child{
+.fP{
     padding-left: var(--generalSpacing);
     margin-right: 0;
 }
-
+a:hover{
+    transition: .3s;
+    font-weight: bold;
+}
+.profile img{
+    height: 5vh; 
+}
 
 /* main */
 main{
     margin: var(--generalSpacing);
 }
-section{
+section:not(.banner){
     margin-top: var(--sectionSpacing);
 }
 

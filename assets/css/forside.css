@@ -1,0 +1,223 @@
+
+/* Intro */
+
+.indexIntro {
+    margin-bottom: 25px;
+}
+
+ol {
+    padding-inline-start: 0;
+}
+
+
+/* Karatebelt sektion */
+
+.karateBelts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin: 25px;
+    
+}
+
+.karateBelts li {
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    height: 30px;
+    list-style-type: none;
+}
+
+.karateBelts li:nth-child(1), .karateBelts li:nth-child(7) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.karateBelts li:nth-child(1) {
+    border: 2px solid black;
+    color: black;
+    height: 26.5px;
+}
+
+
+.karateBelts li:nth-child(2) {
+    background: #E31E24;
+
+}
+
+.karateBelts li:nth-child(3) {
+    background: #23377F;
+
+}
+
+.karateBelts li:nth-child(4) {
+    background: #FFCF4D;
+
+}
+
+.karateBelts li:nth-child(5) {
+    background: #1B8A0F;
+
+}
+.karateBelts li:nth-child(6) {
+    background: #865327;
+
+}
+.karateBelts li:nth-child(7) {
+    background: black;
+    grid-column: 2 / 2;
+}
+
+
+
+/* Værdier sektion */
+
+.indexValues {
+    background: #23377F;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.indexValues h3, .indexValues p {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: white;
+    
+}
+
+.indexValues i {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.indexValues span {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.indexValues p {
+    text-align: left;
+}
+
+/* Billede af karatebørn */
+.indexKarateKids {
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+}
+
+/* Træningstider sektion */
+.trainingTime span {
+    font-weight: 700;
+}
+
+
+@media screen and (min-width: 800px) {
+    
+    /* Intro sektion */
+    .indexIntro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .indexIntro ol {
+        grid-column: 2 / -1;
+    }
+
+    .indexIntro h3 {
+        margin-top: 7.5rem;
+        font-size: 15px;
+
+    }
+
+    .indexIntro button {
+        grid-column: 2 / -1;
+        margin-right: 20rem;
+        margin-top: 3rem;
+
+    }
+
+    /* Karatebelts */
+    .karateBelts {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin-top: -40px;
+
+    }
+
+    .karateBelts li:nth-child(1) {
+        font-size: 7.5px;
+    }
+
+    .karateBelts li:nth-child(7) {
+        grid-column: 7 / 7;
+
+    }
+
+
+    /* Værdier sektion */
+    .indexValues {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .indexValues p {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .indexValues i {
+        font-size: 2.5rem;
+    }
+
+    .indexValues span {
+        font-size: 15px;
+        margin-bottom: 3rem;
+    }
+
+
+    /* Træningstider sektion */
+    .trainingTime {
+        display: flex;
+        margin: 0;
+    }
+
+    .trainingTime article {
+        order: 2;
+    }
+    .trainingTime img {
+        object-fit:cover;
+        max-width: 60%;
+        height: 35rem;
+        order: 1;
+    }
+
+
+}
+
+@media screen and (min-width: 900px) {
+    .karateBelts li:nth-child(1) {
+        font-size: 10px;
+    }
+}
+    
+@media screen and (min-width: 910px) {
+
+    .indexIntro h3 {
+        margin-top: 5.5rem;
+    
+    }
+
+}    

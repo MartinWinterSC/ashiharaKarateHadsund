@@ -24,3 +24,12 @@ h3, h4, p{
 h3{
     font-weight: bold;
 }
+.pBold{
+    font-weight: bold;
+}
+@media screen and (min-width: 1000px){
+    main{
+        margin-left: 20vw;
+        margin-right: 20vw;
+    } 
+}

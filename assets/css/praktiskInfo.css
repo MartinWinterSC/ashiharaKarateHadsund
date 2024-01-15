@@ -1,0 +1,88 @@
+/* varibles */
+:root{
+    /* colors */
+    --primaryColor: #23377F;
+    --secondaryColor: #E31E24;
+    --offWhite: #EEEDE8;
+
+    /* spacing */
+    --generalSpacing: 25px;
+    --sectionSpacing: 50px;
+}
+
+/* Intro sektion */
+.praktiskIntro {
+    margin-bottom: var(--generalSpacing);
+}
+.praktiskIntro h2 {
+    font-size: 20px;
+}
+.praktiskIntro p {
+    font-size: 15px
+}
+
+
+/* bestyrelse sektion */
+
+.bestyrelsenWrapper {
+    background: var(--offWhite);
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.bestyrelsenWrapper h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0; 
+}
+
+.bestyrelsenWrapper h3 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.bestyrelsenWrapper img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+
+}
+
+@media screen and (min-width: 600px) {
+
+    .praktiskIntro {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+
+    .praktiskIntro article {
+        max-width: 50%;
+    }
+
+    .bestyrelsenWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bestyrelsenWrapper h2 {
+        grid-column: 1 / -1;
+    }
+
+
+}
+
+@media screen and (min-width: 1000px) {
+    
+    .bestyrelsenWrapper  {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+
+   
+}

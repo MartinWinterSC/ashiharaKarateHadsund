@@ -1,7 +1,18 @@
+/* varibles */
+:root{
+    /* colors */
+    --primaryColor: #23377F;
+    --secondaryColor: #E31E24;
+    --offWhite: #EEEDE8;
+
+    /* spacing */
+    --generalSpacing: 25px;
+    --sectionSpacing: 50px;
+}
 
 /* Intro sektion */
 .praktiskIntro {
-    margin-bottom: 25px;
+    margin-bottom: var(--generalSpacing);
 }
 .praktiskIntro h2 {
     font-size: 20px;
@@ -14,7 +25,7 @@
 /* bestyrelse sektion */
 
 .bestyrelsenWrapper {
-    background: #EEEDE8;
+    background: var(--offWhite);
     padding-top: 30px;
     padding-bottom: 40px;
 }

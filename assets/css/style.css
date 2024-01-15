@@ -30,6 +30,10 @@ body{
     transition: 300ms;
 }
 
+h1, h2, h3, h4, h5, h6, p, ol {
+    margin: 25px;
+}
+
 /* varibles */
 :root{
     /* colors */
@@ -77,10 +81,7 @@ a:hover{
     height: 5vh; 
 }
 
-/* main */
-main{
-    margin: var(--generalSpacing);
-}
+
 section:not(.banner){
     margin-top: var(--sectionSpacing);
 }

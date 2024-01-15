@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    gap: 5vw;
+    /* justify-content: space-between; */
+    flex-direction: column;
+}
+.c3{
+    max-width: 100%;
+}
+h2{
+    text-align: center;
+}
+.iT{
+    text-align: center;
+    width: 500px;
+    justify-content: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.c2{
+    max-width: 100%;
+}
+.note{
+    margin-top: 40px;
+}
+article p{
+    line-height: 1rem;
+}
+
+@media screen and (min-width: 700px){
+    .container{
+        flex-direction: row;
+    }
+    .c3{
+        max-width: 30%;
+    }
+    .c2{
+        max-width: 50%;
+    }
+}

@@ -100,8 +100,6 @@ a:hover{
 .profile img{
     height: 5vh; 
 }
-
-
 section:not(.banner){
     margin-top: var(--sectionSpacing);
 }
@@ -132,7 +130,7 @@ button{
     content: "";
     display: block;
     position: absolute;
-    width: 55%;
+    width: 50%;
     height: 5rem;
     background-color: rgba(35, 55, 127, 0.2);
     top: 50%;
@@ -144,6 +142,7 @@ button{
     top: 50%;
     left: 50%;
     margin-top: 0;
+    margin-left: 0;
     transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -189,6 +188,13 @@ button{
 .rM{
     text-align: center;
     margin-bottom: var(--generalSpacing);
+}
+.focusEPLine{
+    margin-left: 10vw;
+        margin-right: 10vw;
+}
+.focusEP h4{
+    margin-left: 0;
 }
 
 /* icons */
@@ -301,8 +307,10 @@ footer h2 {
     .mB{
         display: grid;
     }
+}
 @media screen and (min-width: 800px) {
     footer {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }
+}

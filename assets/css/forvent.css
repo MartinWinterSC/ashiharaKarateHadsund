@@ -1,4 +1,15 @@
 
+/* varibles */
+:root{
+    /* colors */
+    --primaryColor: #23377F;
+    --secondaryColor: #E31E24;
+    --offWhite: #EEEDE8;
+
+    /* spacing */
+    --generalSpacing: 25px;
+    --sectionSpacing: 50px;
+}
 
 .radgivning img{
     width: 100%;
@@ -43,7 +54,7 @@ text-align: center;
 
 .faq{
     background-color: beige;
-    margin: 0;
+    margin: 0 !important;
 }
 
 #accordion{
@@ -58,13 +69,17 @@ padding: 0;
 #accordion li{
     list-style: none;
     width: auto;
-    background-color: darkblue;
-    padding: 20px;
-    margin-bottom: 10px;
+    background-color: var(--primaryColor);
+    padding: 25px;
+    margin-bottom: var(--generalSpacing);
 }
 
 #accordion li label{
     cursor: pointer;
+    font-size: 12px;
+    margin-left: var(--generalSpacing);
+
+
 }
 
 .toggle-icon:before{
@@ -76,6 +91,7 @@ padding: 0;
     width: 25px;
     height: 10px;
     margin-left: auto;
+    margin-bottom: 25px;
 }
 
 #accordion li label span{
@@ -145,6 +161,15 @@ padding: 0;
     max-height: 400px;
 }
 
+@media screen and (min-width:400px) {
+    #accordion li label{
+        font-size: 15px;
+        
+    }
+
+}
+
+
 
 /* Media query */ 
 @media screen and (min-width:600px){
@@ -183,17 +208,33 @@ padding: 0;
 
      
 
-     #accordion {
-        display: flex;
+    
+
+    #accordion {
+        place-items: center;
+    }
+    
+
+}   
+
+@media screen and (min-width:800px) {
+
+    #accordion {
+        /* display: flex;
         flex-direction: row;
         align-content: flex-start;
         flex-wrap: wrap;
        column-gap: 2rem;
-       margin: 25px;
+       */
+       margin: 25px; 
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
 
+       
     }
+
     #accordion li{
-        width: 450px;
+        width: 85%;
+        margin-bottom: 25px;
     }
-
-}   
+}

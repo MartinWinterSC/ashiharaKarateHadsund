@@ -67,6 +67,7 @@ article.payment p, h2{
 }
 .container2 p, h2, h3{
     margin: var(--generalSpacing);
+    margin-top: 0;
 }
 .container2 section{
     max-width: 50%;

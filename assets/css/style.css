@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6, p, ol {
     height: 10vh;
 }
 .mB{
-    display: grid;
+    display: none;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     background-color: var(--primaryColor);
@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5, h6, p, ol {
     gap: 10px;
     height: 10vh;
 }
+
 .menu{
     height: 5vh;
     justify-self: end;
@@ -190,11 +191,15 @@ button{
     margin-bottom: var(--generalSpacing);
 }
 .focusEPLine{
-    margin-left: 10vw;
-        margin-right: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: var(--sectionSpacing);
 }
 .focusEP h4{
     margin-left: 0;
+}
+article.focusEP{
+    width: 100%;
 }
 
 /* icons */
@@ -203,13 +208,7 @@ button{
     width: 3rem;
 }
 
-.mB{
-    display: none;
-}
-
 /* Footer */
-/* Footer */
- 
 footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -220,24 +219,19 @@ footer {
 footer h2 {
     grid-column: 1 / -1;
 }
- 
 .footerContact {
     grid-column: 1 / -1;
 }
- 
 .footerAdress, .footerContact {
     margin-left: 20px;
     font-size: 16px;
 }
- 
 .footerAdress span, .footerContact span {
     font-weight: 900;
 }
- 
 .footerAdress, .footerLogo {
     gap: 25px;
 }
- 
 .footerLogo {
     object-fit: contain;
     margin: auto;
@@ -245,47 +239,35 @@ footer h2 {
     width: 120px;
  
 }
- 
 .footerSocials {
     grid-row: 4 / -1;
     grid-column: 1 / -1;
     justify-self: center;
 }
- 
 .footerSocials i {
     font-size: 3rem;
     margin: 15px;
 }
- 
- 
- 
- 
+
+/* media queries */
 @media screen and (min-width: 800px) {
     footer {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }
- 
     footer h2 {
         grid-column: 2 / 9;
         margin-bottom: 40px;
- 
     }
- 
     .footerLogo {
         grid-row: 2 / 3;
         grid-column: 10 / 11;
         margin: 0;
- 
     }
- 
     .footerAdress {
- 
         grid-column: 2 / 4;
         grid-row: 2 / 3;
- 
     }
- 
     .footerSocials {
         display: flex;
         flex-direction: column;
@@ -293,32 +275,22 @@ footer h2 {
         grid-row: 3 / -1;
         justify-self: left;
         padding-left: 20px;
- 
       }
- 
       .footerSocials i {
         margin-bottom: 20px;
         margin: 0;
         padding: 12px;
         font-size: 2rem;
- 
       }
- 
       .footerContact {
         grid-column: 3 / 9;
         grid-row: 2 / 3;
         margin-left: 100px;
- 
       }
- 
       .footerAdress, .footerContact, .footerLogo {
         margin-bottom: 70px;
       }
- 
- 
 }
-
-/* media queries */
 @media screen and (min-width: 900px){
     .focusEPLine{
         flex-direction: row;

@@ -19,14 +19,16 @@
 
 #accordion {
     padding: 0%;
-    margin: 0 auto;
-    max-width: 600px;
+    max-width: 100%;
+    margin: var(--generalSpacing);
 
 }
 
+
+
 #accordion li {
     list-style: none;
-    width: 100%;
+    width: 85%;
     margin-bottom: 25px;
     background: var(--offWhite);
     padding: 25px;
@@ -38,11 +40,13 @@
     justify-content: space-between;
     cursor: pointer;
     margin: 0;
+    text-align: center;
+    font-size: 13px;
 }
 
 #accordion li label h3 .number {
     color: var(--primaryColor);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 #accordion li label span {
@@ -66,4 +70,57 @@
 
 #accordion label+input[type="checkbox"]:checked+.content {
     max-height: 400px;
+}
+
+.number {
+    margin-left: 5px;
+}
+
+@media screen and (min-width: 400px) {
+    #accordion li label h3 .number  {
+        font-size: 2rem
+    }
+
+    #accordion li label h3  {
+        font-size: 15px
+    }
+}
+@media screen and (min-width: 600px) {
+    #accordion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+
+    }
+    #accordion li {
+        width: 70%;
+
+    }
+
+    #accordion li label h3  {
+        font-size: 12px;
+    }
+
+    #accordion li label h3 .number  {
+        font-size: 1.5rem
+    }
+
+    #accordion li label i {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .intro {
+        padding: 0 50px 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+   
+    #accordion {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }

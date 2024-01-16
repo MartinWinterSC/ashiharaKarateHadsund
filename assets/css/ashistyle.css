@@ -1,12 +1,34 @@
+:root {
+    /* colors */
+    --primaryColor: #23377F;
+    --secondaryColor: #E31E24;
+    --offWhite: #EEEDE8;
+    --primaryTransparent: rgba(35, 55, 127, 0.54);
+
+    /* spacing */
+    --generalSpacing: 25px;
+    --sectionSpacing: 50px;
+}
 /* Ashihara */ 
 .hvaderashi {
-    margin: 15px ;
+    margin: 25px ;
 
 }
 .kanchoimg img{
-    width: 100%;
-    height: auto;
+    width: 90%;
+    object-fit: cover;
+    height: 20rem;
+    margin-bottom: -25px;
+    padding: var(--generalSpacing);
 }
+
+.kancho {
+    font-size: 10px;
+    margin: 5px 25px 25px;
+}
+
+
+
 .hvaderashi p {
     margin: 0;
 }
@@ -27,8 +49,15 @@
     padding: 20px;
 }
 .maalsatningikon{
-    display: flex;
-    margin: 15px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+ margin: 25px;
+}
+
+.maalsatningikon p {
+    font-size: 10px;
+    
 }
 .maalsatning a{
     margin: 30px;
@@ -36,15 +65,71 @@
     text-align: center;
 }
 
-@media screen and (min-width: 1000px) {
-    main{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto auto;
-        width: 1200px;
-        grid-gap: 2rem;
-        padding: 70px;
-        margin: auto; 
+@media screen and (min-width: 400px) {
+.kanchoimg img {
+    height: 25rem;
+}
+
+
+}
+
+@media screen and (min-width: 500px) {
+    .kanchoimg img {
+        height: 30rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .kanchoimg img {
+
+        height: 35rem;
+
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+.gridWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    width: 1200px;
+    grid-gap: 2rem;
+  padding: var(--generalSpacing);
+  margin: auto; 
+ 
+}
+
+.hvaderashi {
+    grid-row: 1 / span 1; 
+}
+
+.kanchoimg {
+  grid-row: 1 / span 2;
+}
+
+
+.kanchoimg img { 
+    
+    width: 100%;
+    height: 32rem;
+    object-fit: cover;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.kancho {
+    margin: 25px 0 0;
+
+}
+
+
+
+.hvaderashi2 {
+    grid-column: 1 / span 1; 
+      grid-row: 3 / span 2;
+      margin-top: 3rem ;
+
     }
     .hvaderashi {
         grid-columns: 1 / span 1;
@@ -65,13 +150,18 @@
         }
 
 
-    .maalsatning{
-       grid-columns: 1 / span 1;
-       grid-rows: 2 / span 1;
-    }
-    .citat{
-        height: 5rem;
-        grid-column: 1 / span 1; 
-          grid-row: 2 / span 2;
-    }
+
+
+.citat{
+    height: 5rem;
+    grid-column: 1 / span 1; 
+      grid-row: 2 / span 2;
 }
+
+
+}
+
+
+
+
+

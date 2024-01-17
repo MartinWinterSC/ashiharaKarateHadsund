@@ -12,21 +12,24 @@
 /* Ashihara */ 
 .hvaderashi {
     margin: 25px ;
-
 }
+
+.hvaderashi h2 {
+    margin: 25px 0 25px;
+}
+
+
+
 .kanchoimg img{
-    width: 90%;
+    width: 100%;
     object-fit: cover;
-    height: 20rem;
     margin-bottom: -25px;
-    padding: var(--generalSpacing);
 }
 
 .kancho {
     font-size: 10px;
-    margin: 5px 25px 25px;
+    margin: 35px 25px 50px;
 }
-
 
 
 .hvaderashi p {
@@ -88,12 +91,12 @@ grid-template-rows: repeat(2, 1fr);
 }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
 .gridWrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
-    width: 1200px;
+    width: 90%;
     grid-gap: 2rem;
   padding: var(--generalSpacing);
   margin: auto; 
@@ -159,6 +162,12 @@ grid-template-rows: repeat(2, 1fr);
 }
 
 
+}
+
+@media screen and (min-width: 1500px) {
+    .hvaderashi2 p {
+        margin-top: -60px;
+    }
 }
 
 

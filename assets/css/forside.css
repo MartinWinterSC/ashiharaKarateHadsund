@@ -18,12 +18,15 @@
     flex-direction: column;
 }
 
+
+
 ol {
     padding-inline-start: 0;
 }
 
 .indexIntro button {
     display: flex;
+    background-color: #1C8910;
     align-items: center;
     justify-content: center;
     align-self: center;
@@ -106,6 +109,7 @@ ol {
     background: var(--primaryColor);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
     
 }
 
@@ -139,12 +143,9 @@ ol {
 
 
 .indexKarateKids {
-  
     width: 100%;
-    object-fit: cover;
-    display: block;
-    padding: var(--generalSpacing);
-    height: 12rem;
+    object-fit: cover;    
+    height: 15rem;
 }
 
 /* Træningstider sektion */
@@ -176,6 +177,12 @@ ol {
     
     /* Intro sektion */
 
+    .indexIntro {
+        margin: 60px;
+    }
+    .velkommenh2 {
+        margin-left: 75px;
+    }
     
     .indexIntro {
         display: grid;
@@ -196,6 +203,7 @@ ol {
         
 
     }
+
 
   
 
@@ -252,7 +260,7 @@ ol {
     .trainingTime img {
         object-fit:cover;
         max-width: 60%;
-        height: 35rem;
+        height: 27rem;
         order: 1;
         margin: 0;
         padding: 0;
@@ -273,5 +281,27 @@ ol {
         height: 30%;
 
     }
+
+    .indexIntro {
+        margin: 40px;
+    }
+    .velkommenh2 {
+        margin-left: 65px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+  
+    .indexIntro button {
+        width: 30%;
+        height: 60%;
+
+    }
+
+  .trainingTime article {
+    margin: 25px 5rem 0;
+    
+  }
+
 }
     

@@ -104,7 +104,7 @@ footer h2{
     
     .instrukter  {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        
+        justify-content: center;
+        grid-template-columns: 25vw 25vw 25vw;
     }
 }

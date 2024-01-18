@@ -9,7 +9,8 @@
     --sectionSpacing: 50px;
 }
 
-section {
+/* general */
+section{
     margin-top: 0 !important;
 }
 .container{
@@ -43,28 +44,23 @@ article p{
 
 }
 
-#trainingPlanContainer {
+/* background image */
+#trainingPlanContainer{
     background-image: url(../img/additional/backgroundImageTraining.png);
 }
-
-#gradueringSektion {
+#gradueringSektion{
     background-color: white;
 }
-
-#gradueringSektion h2 {
+#gradueringSektion h2{
     margin-top: 0;
     padding-top: 50px;
 }
 
-
-
-
-
-
+/* karate belt list */
 ul li{
     margin-top: var(--generalSpacing);
 }
-.karateBelts {
+.karateBelts{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -72,13 +68,10 @@ ul li{
     padding-left: 0;
     
 }
-
-#karatebeltsBold {
+#karatebeltsBold{
     font-weight: 700;
 }
-
-
-.karateBelts li {
+.karateBelts li{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,62 +80,61 @@ ul li{
     height: 35px;
     list-style-type: none;
 }
-.karateBelts li:nth-child(1), .karateBelts li:nth-child(7) {
+.karateBelts li:nth-child(1), .karateBelts li:nth-child(7){
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.karateBelts li:nth-child(1) {
+.karateBelts li:nth-child(1){
     border: 2px solid black;
     color: black;
     height: 30px;
 }
-.karateBelts li:nth-child(2) {
+.karateBelts li:nth-child(2){
     background: #E31E24;
 
 }
-.karateBelts li:nth-child(3) {
+.karateBelts li:nth-child(3){
     background: var(--primaryColor);
 
 }
-.karateBelts li:nth-child(4) {
+.karateBelts li:nth-child(4){
     background: #FFCF4D;
 
 }
-.karateBelts li:nth-child(5) {
+.karateBelts li:nth-child(5){
     background: #1B8A0F;
 
 }
-.karateBelts li:nth-child(6) {
+.karateBelts li:nth-child(6){
     background: #865327;
 
 }
-.karateBelts li:nth-child(7) {
+.karateBelts li:nth-child(7){
     background: black;
     grid-column: 2 / 2;
 }
 
-.instrukterSection {
+/* instrukter setup */
+.instrukterSection{
     background-color: var(--offWhite);
 }
-
-.instrukterSection h2 {
+.instrukterSection h2{
     margin-top: 0;
 }
-
 .instrukter{
     padding-top: 30px;
 }
 .instrukterSection h2, .instrukterSection h3{
     text-align: center;
 }
-.instrukter h2 {
+.instrukter h2{
     text-align: center;
     font-size: 20px;
     margin-top: 0; 
 }
-.instrukter h3 {
+.instrukter h3{
     font-size: 15px;
     text-align: center;
     margin-bottom: 3rem;
@@ -156,7 +148,7 @@ ul li{
 .instrukter div{
     margin-bottom: var(--generalSpacing);
 }
-.instrukter img {
+.instrukter img{
     width: 15rem;
     height: 15rem;
     object-fit: cover;
@@ -164,39 +156,33 @@ ul li{
     display: block;
 }
 
+/* footer fix */
 footer h2{
     text-align: start;
 }
-@media screen and (min-width: 600px) {
-    .instrukter {
+
+/* media queries */
+@media screen and (min-width: 600px){
+    .instrukter{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .instrukter h2 {
+    .instrukter h2{
         grid-column: 1 / -1;
     }
 }
-
-@media screen and (min-width: 1000px) {
-    #nybegynderSection .c3, #trainingPlanContainer .c2, #gradueringSektion .c2  {
+@media screen and (min-width: 1000px){
+    #nybegynderSection .c3, #trainingPlanContainer .c2, #gradueringSektion .c2{
         margin: 0 5vh 5vh;
     }
 
-    #gradueringSektion .c2 {
+    #gradueringSektion .c2{
         width: 50%;
     }
-    
-
- 
-  
-
-
-
-
-    .even h2 {
+    .even h2{
         margin-left: 4rem;
     }
-    .instrukter  {
+    .instrukter{
         display: grid;
         grid-template-columns: repeat(3, 25vw);
         justify-content: center;
@@ -214,23 +200,23 @@ footer h2{
         }
     }
 }
-@media screen and (min-width: 800px) {
-    .karateBelts {
+@media screen and (min-width: 800px){
+    .karateBelts{
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(1, 1fr);
         margin: 25px
 
     }
-    .karateBelts li:nth-child(1) {
+    .karateBelts li:nth-child(1){
         font-size: 7.5px;
     }
-    .karateBelts li:nth-child(7) {
+    .karateBelts li:nth-child(7){
         grid-column: 7 / 7;
 
     }
 }
 @media screen and (min-width: 900px){
-    .karateBelts li:nth-child(1) {
+    .karateBelts li:nth-child(1){
         font-size: 10px;
     }
 }

@@ -1,12 +1,10 @@
+/* spacing */
 :root{
-    /* spacing */
     --generalSpacing: 25px;
     --sectionSpacing: 50px;
 }
-p{
-    margin: 0;
-}
 
+/* article container */
 .container{
     display: flex;
     gap: var(--generalSpacing);
@@ -17,6 +15,12 @@ article:not(.focusEP){
 article:last-child{
     margin-bottom: 0;
 }
+.superContainer{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+/* typography */
 h3, h4, p{
     color: black;
     font-size: 1rem;
@@ -30,16 +34,16 @@ h3{
 .pBold{
     font-weight: bold;
 }
-.superContainer{
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
+
+/* focus entry points correction */
 .focusEP h4{
     margin-left: 0;
     font-weight: bold;
     font-size: 1.5rem;
     color: white;
 }
+
+/* media queries */
 @media screen and (min-width: 800px){
     .superContainer{
         margin-left: 10vw;

@@ -1,5 +1,5 @@
 /* varibles */
-:root {
+:root{
     /* colors */
     --primaryColor: #23377F;
     --secondaryColor: #E31E24;
@@ -12,82 +12,70 @@
 }
 
 /*main styling*/
-.nyhed h2 {
+.nyhed h2{
     text-align: center;
     margin-inline: 25px;
     margin-block: 25px;
 }
-
-.nyhed p {
+.nyhed p{
     text-align: center;
     margin-inline: 25px;
     margin-top: 0;
     margin-bottom: 25px;
-
 }
-
-.background {
+.background{
     background-color: var(--offWhite);
     padding-top: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.post img {
+.post img{
     width: 100%;
-    height: 50vh;
-    object-fit: cover;
-    
+    height: 100%;
+    max-height: 60vh;
+    object-fit: cover; 
 }
-
-.post {
+.post{
     background-color: white;
     margin: 25px;
     margin-left: 10vw;
     margin-right: 10vw;
 }
-
-.post p {
+.post p{
     margin-inline: 25px;
     margin-block: 25px;
 }
-
-.post span {
+.post span{
     margin-inline: 25px;
     font-size: 0.8rem;
 }
-
-.post h2 {
+.post h2{
     margin-top: 25px;
     margin-inline: 25px;
     margin-bottom: 12px;
 }
-
-a {
+a{
     color: var(--primaryColor);
     text-decoration: none;
 }
-
-.socialIcons i {
+.socialIcons i{
     font-size: 20px;
 }
-
-.socialIcons {
+.socialIcons{
     display: flex;
     gap: 2rem;
     justify-content: center;
     align-items: center;
 }
-
-.socialMediaText {
+.socialMediaText{
     text-align: center;
     margin-block: 25px;
     padding-bottom: 25px;
 }
 
 /* button styling */
-.indleas {
+.indleas{
     border: none;
     border-radius: 50px;
     background-color: var(--primaryColor);
@@ -100,39 +88,39 @@ a {
 }
 
 /*medias queries */
-@media screen and (min-width: 600px) {
-    .background {
+@media screen and (min-width: 600px){
+    .background{
         padding-inline: 50px;
     }
 }
 
-@media screen and (min-width: 700px) {
-    .background {
+@media screen and (min-width: 700px){
+    .background{
         padding-inline: 60px;
     }
 }
 
-@media screen and (min-width: 900px) {
-    .background {
+@media screen and (min-width: 1100px){
+    .background{
         padding-inline: 0;
     }
 
-    .post {
+    .post{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .socialIcons {
+    .socialIcons{
         display: flex;
         justify-content: end;
         margin-right: 25px;
     }
 
-    .socialMediaText {
+    .socialMediaText{
         text-align: end;
     }
 
-    .nyhed p {
+    .nyhed p{
         margin-inline: 200px;
     }
 }

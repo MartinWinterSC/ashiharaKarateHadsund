@@ -124,7 +124,7 @@ article img{
 footer h2{
     margin-top: var(--generalSpacing);
 }
-@media screen and (min-width: 750px){
+@media screen and (min-width: 850px){
     .containerSection{
         max-width: 50vw;
     }

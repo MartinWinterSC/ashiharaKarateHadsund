@@ -59,13 +59,16 @@ grid-template-rows: repeat(2, 1fr);
 }
 
 .maalsatningikon p {
-    font-size: 10px;
+    font-size: 0.8rem;
     
 }
 .maalsatning a{
     margin: 30px;
     color: white;
     text-align: center;
+}
+h3.rM{
+    margin-top: 0;
 }
 
 @media screen and (min-width: 400px) {
@@ -121,18 +124,13 @@ grid-template-rows: repeat(2, 1fr);
     padding: 0;
     margin-top: 40px;
     }
-
-    
-
     .kancho {
     margin: 25px 0 0;
 
     }
-
-
     
     .hvaderashi2 {
-    grid-column: 1 / span 1; 
+      grid-column: 1 / span 1; 
       grid-row: 3 / span 2;
       margin-top: 3rem ;
 
@@ -150,7 +148,9 @@ grid-template-rows: repeat(2, 1fr);
         grid-row: 2 / span 2;
     }
 
-
+    .maalsatning p{
+        font-size: 1rem;
+    }
 }
 
 

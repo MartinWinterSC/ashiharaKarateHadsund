@@ -147,9 +147,11 @@ ol {
     text-align: left;
 }
 
+h3.rM{
+    margin-top: 0;
+}
+
 /* Billede af karatebørn */
-
-
 .indexKarateKids {
     width: 100%;
     object-fit: cover;    

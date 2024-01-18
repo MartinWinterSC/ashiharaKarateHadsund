@@ -34,13 +34,13 @@
 
 }
 .radgivning p{
-    margin: 0 10vw 10vw 10vw;
+    margin: 0 10vw 25px 10vw;
 }
 
 .radgivning h3{
 margin-bottom: var(--generalSpacing);
 margin-left: 10vw;
-margin-top: 10vh;
+margin-top: var(--generalSpacing);
 }
 
 
@@ -55,6 +55,7 @@ text-align: center;
 .faq{
     background-color: var(--offWhite);
     margin: 0 !important;
+    padding-bottom: var(--generalSpacing);
 }
 
 #accordion{

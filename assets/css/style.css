@@ -156,7 +156,7 @@ footer{
     object-fit: cover;
     height: 200px;
     width: 30vw;
-    margin-bottom: var(--sectionSpacing);
+    margin-bottom: var(--generalSpacing);
 }
 .overlayContainer{
     position: relative;
@@ -314,6 +314,9 @@ footer h2 {
 @media screen and (min-width: 900px){
     .focusEPLine{
         flex-direction: row;
+        margin-bottom: 0;
+        padding-bottom: var(--sectionSpacing);
+
     }
 }
 @media screen and (max-width: 600px){

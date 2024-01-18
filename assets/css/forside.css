@@ -35,7 +35,7 @@ button {
     justify-content: center;
     align-self: center;
     height: 0;
-    width: 20%;
+    width: 60vw;
     font-size: 15px;
     margin: 25px 25px 0;
 }
@@ -145,21 +145,15 @@ h3.rM{
 
 @media screen and (min-width: 500px) {
     .indexIntro button {
-        width: 40%;
-
+        width: 40vw;
     }
-
     .indexKarateKids {
         height: 15rem;
-
     }
-
 }
-
 @media screen and (min-width: 600px) {
     .indexKarateKids {
         height: 20rem;
-
     }
 }
 
@@ -173,28 +167,18 @@ h3.rM{
     .indexIntro {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: var(--sectionSpacing);
+        padding-right: var(--sectionSpacing);
     }
-  
     .indexIntro ol {
         grid-column: 2 / -1;
     }
-
     .indexIntro h3 {
         font-size: 15px;
-
     }
-
     .indexIntro button {
         grid-column: 2 / -1;
-        
-
     }
-
-
-  
 
     /* Karatebelts */
     .karateBelts {
@@ -294,8 +278,8 @@ h3.rM{
     }
 
     .indexIntro button {
-        width: 40%;
-        height: 30%;
+        width: 22vw;
+        /* height: 30%; */
 
     }
 
@@ -312,9 +296,7 @@ h3.rM{
 @media screen and (min-width: 1000px) {
   
     .indexIntro button {
-        width: 30%;
-        height: 60%;
-
+        width: 20vw;
     }
 
   .trainingTime article {
@@ -330,8 +312,9 @@ h3.rM{
 }
 
 @media screen and (min-width: 1300px) {
-  
-   
+    .indexIntro button {
+        width: 17vw;
+    }
 
   .indexValues p {
     padding: 0 20rem 0;

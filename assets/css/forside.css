@@ -10,8 +10,12 @@
     --sectionSpacing: 50px;
 }
 
-/* Intro */
+/* hero banner */
+.banner img{
+    height: 40vh;
+}
 
+/* Intro */
 .indexIntro {
     margin-bottom: var(--generalSpacing);
     display: flex;
@@ -38,7 +42,6 @@ ol {
 
 
 /* Karatebelt sektion */
-
 .karateBelts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -353,4 +356,3 @@ ol {
  }
 
 }
-    

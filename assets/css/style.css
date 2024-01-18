@@ -27,7 +27,7 @@ p{
 body{
     margin: 0;
     font-family: 'lato', sans-serif;
-    transition: 300ms;
+    transition: .3s;
 }
 
 h1, h2, h3, h4, h5, h6, p, ol {
@@ -109,18 +109,6 @@ section:not(.banner, .fEP){
 }
 footer{
     margin-top: 0;
-}
-
-/* button styling */
-button{
-    border: none;
-    border-radius: 50px;
-    background-color: var(--secondaryColor);
-    color: white;
-    padding: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 1rem;
 }
 
 /* hero banner */
@@ -218,6 +206,22 @@ article.focusEP{
     margin-top: 0;
 }
 
+/* button styling */
+button{
+    border: none;
+    border-radius: 50px;
+    background-color: var(--secondaryColor);
+    color: white;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
 /* icons */
 .icons{
     height: 3rem;
@@ -262,6 +266,7 @@ footer h2 {
 }
 .footerSocials img {
     height: 30px;
+    width: 30px;
     margin: 15px;
 }
 
@@ -319,10 +324,17 @@ footer h2 {
     .mB{
         display: grid;
     }
+    .overlayContainerMain p{
+        display: none;
+    }
 }
 @media screen and (min-width: 800px) {
     footer {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }
+}
+
+@media screen and (min-width: 800px){
+    
 }

@@ -23,6 +23,7 @@ section{
 h2{
     text-align: start;
     padding-top: var(--generalSpacing);
+    margin-bottom: 0;
 }
 .iT{
     width: 50vw;

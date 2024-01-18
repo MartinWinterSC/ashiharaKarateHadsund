@@ -57,8 +57,8 @@ h1, h2, h3, h4, h5, h6, p, ol {
     gap: 10px;
     height: 10vh;
 }
-nav.dT a:not(.fP, .profile){
-    font-size: 0.7rem;
+nav.dT a{
+    font-size: 1rem;
 }
 .mB{
     display: none;
@@ -126,9 +126,9 @@ footer{
     display: block;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 99%;
     background-color: rgba(35, 55, 127, 0.2);
-    top: 50%;
+    top: 49%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -316,7 +316,7 @@ footer h2 {
         flex-direction: row;
     }
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 600px){
     .dT{
         display: none;
     }
@@ -333,7 +333,18 @@ footer h2 {
         grid-template-rows: repeat(1, 1fr);
     }
 }
-
-@media screen and (min-width: 800px){
-    
+@media screen and (max-width: 1200px){
+    nav.dT a:not(.fP, .profile){
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 1000px){
+    nav.dT a:not(.fP, .profile){
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 800px){
+    nav.dT a:not(.fP, .profile){
+        font-size: 0.7rem;
+    }
 }

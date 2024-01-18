@@ -12,6 +12,9 @@
 }
 
 /*main styling*/
+section.nyhed{
+    margin-top: 0;
+}
 .nyhed h2{
     text-align: center;
     margin-inline: 25px;
@@ -22,6 +25,7 @@
     margin-inline: 25px;
     margin-top: 0;
     margin-bottom: 25px;
+    max-width: 60vw;
 }
 .background{
     background-color: var(--offWhite);

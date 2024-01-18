@@ -36,14 +36,16 @@
 
 .post img {
     width: 100%;
-    height: 100%;
+    height: 50vh;
     object-fit: cover;
-
+    
 }
 
 .post {
     background-color: white;
     margin: 25px;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .post p {
@@ -110,7 +112,7 @@ a {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
     .background {
         padding-inline: 0;
     }

@@ -11,23 +11,17 @@
 
 .container{
     display: flex;
-    gap: 5vw;
-    /* justify-content: space-between; */
     flex-direction: column;
-    
 }
-section
 .c3{
     max-width: 100%;
-    background-color: --;
 }
 h2{
-    text-align: center;
-    margin-top: var(--generalSpacing);
+    text-align: start;
+    padding-top: var(--generalSpacing);
 }
 .iT{
-    text-align: center;
-    width: 500px;
+    width: 50vw;
     justify-content: center;
     margin-left: 50%;
     transform: translate(-50%);
@@ -44,22 +38,66 @@ article p{
 .even{
     background-color: var(--offWhite);
 }
+ul li{
+    margin-top: var(--generalSpacing);
+}
+.karateBelts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+.karateBelts li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: white;
+    height: 35px;
+    list-style-type: none;
+}
+.karateBelts li:nth-child(1), .karateBelts li:nth-child(7) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.karateBelts li:nth-child(1) {
+    border: 2px solid black;
+    color: black;
+    height: 30px;
+}
+.karateBelts li:nth-child(2) {
+    background: #E31E24;
 
-@media screen and (min-width: 700px){
-    .container{
-        flex-direction: row;
-    }
-    .c3{
-        max-width: 30%;
-    }
-    .c2{
-        max-width: 50%;
-    }
+}
+.karateBelts li:nth-child(3) {
+    background: var(--primaryColor);
+
+}
+.karateBelts li:nth-child(4) {
+    background: #FFCF4D;
+
+}
+.karateBelts li:nth-child(5) {
+    background: #1B8A0F;
+
+}
+.karateBelts li:nth-child(6) {
+    background: #865327;
+
+}
+.karateBelts li:nth-child(7) {
+    background: black;
+    grid-column: 2 / 2;
 }
 
-.instrukter {
-    background: var(--offWhite);
+.instrukter{
     padding-top: 30px;
+}
+.instrukterSection h2, .instrukterSection h3{
+    text-align: center;
 }
 .instrukter h2 {
     text-align: center;
@@ -87,6 +125,7 @@ article p{
     margin: auto;
     display: block;
 }
+
 footer h2{
     text-align: start;
 }
@@ -101,10 +140,41 @@ footer h2{
 }
 
 @media screen and (min-width: 1000px) {
-    
     .instrukter  {
         display: grid;
+        grid-template-columns: repeat(3, 25vw);
         justify-content: center;
-        grid-template-columns: 25vw 25vw 25vw;
+    }
+    @media screen and (min-width: 700px){
+        .container{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .c3{
+            max-width: 30%;
+        }
+        .c2{
+            max-width: 50%;
+        }
+    }
+}
+@media screen and (min-width: 800px) {
+    .karateBelts {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin: 25px
+
+    }
+    .karateBelts li:nth-child(1) {
+        font-size: 7.5px;
+    }
+    .karateBelts li:nth-child(7) {
+        grid-column: 7 / 7;
+
+    }
+}
+@media screen and (min-width: 900px){
+    .karateBelts li:nth-child(1) {
+        font-size: 10px;
     }
 }

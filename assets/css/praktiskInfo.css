@@ -52,7 +52,8 @@
 @media screen and (min-width: 600px){
     .praktiskIntro{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 10vw;
         align-items: flex-start;
     }
 
@@ -62,7 +63,8 @@
 
     .bestyrelsenWrapper{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        grid-template-columns: repeat(2, 45vw);
     }
 
     .bestyrelsenWrapper h2{
@@ -70,10 +72,10 @@
     }
 }
 
-@media screen and (min-width: 1000px){
-    .bestyrelsenWrapper{
+@media screen and (min-width: 1000px) {
+    .bestyrelsenWrapper  {
         display: grid;
+        grid-template-columns: repeat(3, 25vw);
         justify-content: center;
-        grid-template-columns: 25vw 25vw 25vw;
     }
 }

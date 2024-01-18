@@ -11,6 +11,10 @@
     --sectionSpacing: 50px;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 .container{
     display: flex;
     gap: var(--generalSpacing);

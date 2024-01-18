@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tilmeld</title>
+    <link rel="stylesheet" href="./assets/css/tilmeld.css" />
+  </head>
+  <body>
+    <main>
+      <section class="formWrapper">
+        <h2>Tilmeld dig her</h2>
+        <h3>Udfyld formularen nedenfor</h3>
+
+        <form action="#">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="FULDE NAVN"
+            required
+          />
+
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="ADRESSE"
+            required
+          />
+
+          <input
+            type="text"
+            name="post"
+            id="post"
+            placeholder="POSTNUMMER"
+            required
+          />
+
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="TELEFON"
+            required
+          />
+
+          <input type="date" name="birthday" id="birthday" required />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="EMAIL"
+            required
+          />
+
+          <div class="pictureKnap">
+            <label for="pictureButton">Profil billede</label> <br />
+            <button type="button" name="pictureButton" id="pictureButton">
+              Vælg billede
+            </button>
+          </div>
+
+          <div class="radioKlub">
+            <label>Har du være medlem i en klub tidligere?</label> <br />
+            <input type="radio" name="radio" id="radioJa" />
+            <label for="radioJa">Ja</label>
+            <input type="radio" name="radio" id="radioNej" />
+            <label for="radioNej">nej</label>
+          </div>
+
+          <label id="graduering"
+            >Hvis ja - hvad er nuværende grad samt sidste gradueringsdato
+          </label>
+          <input
+            type="text"
+            name="grad"
+            id="grad"
+            placeholder="Grad og graduering"
+          />
+
+          <div class="checkbox1">
+            <input type="checkbox" name="checkbox1" required />
+            <label
+              >Ja jeg er indforstået med, at klubben må bruge billeder og film
+              af mit barn og mig selv på hjemmesiden
+            </label>
+          </div>
+
+          <div class="checkbox2">
+            <input type="checkbox" name="checkbox2" required />
+            <label
+              >Jeg bekræft at jeg har læst karate etiketten (Læs om det her)
+            </label>
+          </div>
+
+          <div class="submitKnap">
+            <label for="submit"
+              >Tryk "Send formular" for at tilmelde dig!</label
+            >
+            <br />
+            <button type="submit" name="submit" id="submit">
+              Send formular
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -29,7 +29,7 @@
 #accordion li {
     list-style: none;
     width: 85%;
-    margin-bottom: 25px;
+    margin-bottom: var(--generalSpacing);
     background: var(--offWhite);
     padding: 25px;
 }
@@ -93,13 +93,12 @@
 
     }
     #accordion li {
-        width: 70%;
+        width: 75%;
+        margin-bottom: 2rem;
 
     }
 
-    #accordion li label h3  {
-        font-size: 12px;
-    }
+  
 
     #accordion li label h3 .number  {
         font-size: 1.5rem
@@ -108,19 +107,53 @@
     #accordion li label i {
         font-size: 1rem;
     }
+    #accordion li label h3  {
+        font-size: 15px
+    }
 }
 
 @media screen and (min-width: 800px) {
     .intro {
         padding: 0 50px 0;
     }
+   
 }
 
 @media screen and (min-width: 1000px) {
+
+    .intro {
+        margin: 25px 30vh 0;
+    }
    
     #accordion {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
+}
+
+ @media screen and (min-width: 1300px) {
+
+    .intro {
+        margin: 25px 40vh 25px;
+    }
+   
+   
+}
+
+@media screen and (min-width: 1400px) {
+    #accordion li {
+        margin-bottom: 2rem;
+        width: 80%;
+
+    }
+
+    #accordion li label h3 {
+        text-align: left;
+    }
+
+   
+    
+   
+   
 }

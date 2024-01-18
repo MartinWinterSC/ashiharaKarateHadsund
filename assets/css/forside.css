@@ -342,4 +342,15 @@ ol {
  }
 
 }
+
+@media screen and (min-width: 1300px) {
+  
+   
+
+  .indexValues p {
+    padding: 0 20rem 0;
+
+ }
+
+}
     

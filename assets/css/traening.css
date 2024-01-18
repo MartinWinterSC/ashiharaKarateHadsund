@@ -9,6 +9,9 @@
     --sectionSpacing: 50px;
 }
 
+section {
+    margin-top: 0 !important;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -37,7 +40,27 @@ article p{
 }
 .even{
     background-color: var(--offWhite);
+
 }
+
+#trainingPlanContainer {
+    background-image: url(../img/additional/backgroundImageTraining.png);
+}
+
+#gradueringSektion {
+    background-color: white;
+}
+
+#gradueringSektion h2 {
+    margin-top: 0;
+    padding-top: 50px;
+}
+
+
+
+
+
+
 ul li{
     margin-top: var(--generalSpacing);
 }
@@ -46,8 +69,15 @@ ul li{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
+    padding-left: 0;
     
 }
+
+#karatebeltsBold {
+    font-weight: 700;
+}
+
+
 .karateBelts li {
     display: flex;
     align-items: center;
@@ -91,6 +121,14 @@ ul li{
 .karateBelts li:nth-child(7) {
     background: black;
     grid-column: 2 / 2;
+}
+
+.instrukterSection {
+    background-color: var(--offWhite);
+}
+
+.instrukterSection h2 {
+    margin-top: 0;
 }
 
 .instrukter{
@@ -140,6 +178,24 @@ footer h2{
 }
 
 @media screen and (min-width: 1000px) {
+    #nybegynderSection .c3, #trainingPlanContainer .c2, #gradueringSektion .c2  {
+        margin: 0 5vh 5vh;
+    }
+
+    #gradueringSektion .c2 {
+        width: 50%;
+    }
+    
+
+ 
+  
+
+
+
+
+    .even h2 {
+        margin-left: 4rem;
+    }
     .instrukter  {
         display: grid;
         grid-template-columns: repeat(3, 25vw);

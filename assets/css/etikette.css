@@ -34,7 +34,7 @@
     padding: 25px;
 }
 
-#accordion li label h3 {
+#accordion li label .accordionSpan {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,8 +43,12 @@
     text-align: center;
     font-size: 13px;
 }
+.accordionSpan {
+        font-weight: bold;
+        font-size: 1rem;
+}
 
-#accordion li label h3 .number {
+#accordion li label .accordionSpan .number {
     color: var(--primaryColor);
     font-size: 1.5rem;
 }
@@ -77,11 +81,11 @@
 }
 
 @media screen and (min-width: 400px) {
-    #accordion li label h3 .number  {
+    #accordion li label .accordionSpan .number  {
         font-size: 2rem
     }
 
-    #accordion li label h3  {
+    #accordion li label .accordionSpan  {
         font-size: 15px
     }
 }
@@ -100,14 +104,14 @@
 
   
 
-    #accordion li label h3 .number  {
+    #accordion li label .accordionSpan .number  {
         font-size: 1.5rem
     }
 
     #accordion li label i {
         font-size: 1rem;
     }
-    #accordion li label h3  {
+    #accordion li label .accordionSpan  {
         font-size: 15px
     }
 }
@@ -148,7 +152,7 @@
 
     }
 
-    #accordion li label h3 {
+    #accordion li label .accordionSpan {
         text-align: left;
     }
 
